@@ -32,7 +32,7 @@ const [posts, setPosts] = useState(dummyData)
      */
     setPosts(posts.map(post => {
       if(post.id === postId){
-        return {...post, likePost}
+        return {...post, likes: post.likes + 1}
       }
       else{
         return post
