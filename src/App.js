@@ -31,7 +31,7 @@ const [posts, setPosts] = useState(dummyData)
         - otherwise just return the post object unchanged.
      */
     setPosts(posts.map(post => {
-      if(post.postId === postId){
+      if(post.id === postId){
         return {...post, likePost}
       }
       else{
